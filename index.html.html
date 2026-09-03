@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Asra Design</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Georgia, serif; line-height: 1.6; color: #e0e0e0; background: #1a1a2e; }
+
+    nav {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 20px 10%; background: #16213e;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.5); position: sticky; top: 0;
+    }
+    nav .logo { font-size: 26px; font-weight: bold; color: #a55eea; }
+    nav ul { display: flex; list-style: none; gap: 25px; }
+    nav a { text-decoration: none; color: #e0e0e0; font-weight: 500; }
+    nav a:hover { color: #a55eea; }
+
+    .hero { padding: 80px 10%; text-align: center; }
+    .hero h1 { font-size: 48px; color: #a55eea; }
+    .hero p { font-size: 20px; color: #b0b0b0; margin-top: 10px; }
+
+    .about { padding: 60px 10%; text-align: center; background: #16213e; }
+    .about h2 { font-size: 32px; margin-bottom: 30px; color: #fff; }
+    .about p { color: #b0b0b0; max-width: 700px; margin: 0 auto 25px; }
+    .about .highlight { color: #ffa502; font-weight: bold; }
+    .skills { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin-bottom: 35px; }
+    .skill {
+      background: #1f2b47; color: #a55eea; padding: 8px 20px;
+      border-radius: 25px; font-size: 14px; border: 1px solid #a55eea;
+    }
+
+    .services { padding: 60px 10%; text-align: center; background: #1a1a2e; }
+    .services h2 { font-size: 32px; margin-bottom: 30px; color: #fff; }
+    .service-cards { display: flex; gap: 25px; justify-content: center; flex-wrap: wrap; }
+    .card {
+      background: #1f2b47; padding: 30px; border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.4); width: 300px;
+      transition: all 0.3s;
+    }
+    .card:hover { transform: translateY(-8px); box-shadow: 0 8px 20px rgba(0,0,0,0.6); }
+    .card h3 { color: #a55eea; margin-bottom: 10px; }
+    .card p { color: #b0b0b0; }
+
+    .btn {
+      display: inline-block; margin-top: 15px; padding: 10px 25px;
+      background: #ffa502; color: #1a1a2e; text-decoration: none;
+      border-radius: 25px; font-weight: bold;
+    }
+    .btn:hover { background: #e08e0b; }
+
+    .work-title { margin-top: 70px !important; }
+    .gallery-grid { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; }
+    .gallery-grid img {
+      width: 280px; height: 200px; object-fit: cover;
+      border-radius: 12px; box-shadow: 0 2px 10px rgba(0,0,0,0.4);
+      transition: all 0.3s;
+    }
+    .gallery-grid img:hover { transform: scale(1.05); box-shadow: 0 8px 20px rgba(0,0,0,0.6); }
+
+    .pricing { padding: 60px 10%; text-align: center; }
+    .pricing h2 { font-size: 32px; margin-bottom: 30px; color: #fff; }
+    .price-cards { display: flex; gap: 25px; justify-content: center; flex-wrap: wrap; }
+    .price-card {
+      background: #1f2b47; padding: 35px 30px; border-radius: 12px;
+      width: 280px; box-shadow: 0 2px 10px rgba(0,0,0,0.4);
+      transition: all 0.3s;
+    }
+    .price-card:hover { transform: translateY(-8px); box-shadow: 0 8px 20px rgba(0,0,0,0.6); }
+    .price-card h3 { color: #a55eea; font-size: 22px; margin-bottom: 15px; }
+    .price-card .amount { font-size: 40px; font-weight: bold; color: #ffa502; margin-bottom: 20px; }
+    .price-card ul { list-style: none; margin-bottom: 20px; }
+    .price-card li { color: #b0b0b0; padding: 8px 0; border-bottom: 1px solid #2a3a5c; }
+    .price-card.popular { border: 2px solid #ffa502; }
+    .badge {
+      background: #ffa502; color: #1a1a2e; font-size: 12px; font-weight: bold;
+      padding: 4px 12px; border-radius: 20px; margin-bottom: 15px; display: inline-block;
+    }
+
+    .contact { padding: 60px 10%; text-align: center; }
+    .contact h2 { font-size: 32px; color: #fff; }
+    .contact p { color: #b0b0b0; margin: 10px 0 20px; }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">Asra Design</div>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+    <h1>Welcome to Asra Design</h1>
+    <p>MS Office aur Photoshop ki professional services</p>
+  </section>
+
+  <section class="about" id="about">
+    <h2>About Me</h2>
+    <p>Assalam-o-Alaikum! Main <span class="highlight">Asra Khalil</span> hu, Karachi, Pakistan se.
+    Main <span class="highlight">10+ years</span> ka IT experience rakhti hu —
+    MS Office, project management aur design ka professional kaam karti hu.
+    Mera goal simple hai: <strong>aapka kaam waqt pe, professional quality ke saath!</strong></p>
+    <div class="skills">
+      <span class="skill">📊 MS Excel</span>
+      <span class="skill">📝 MS Word</span>
+      <span class="skill">📈 PowerPoint</span>
+      <span class="skill">📋 MS Project</span>
+      <span class="skill">🎨 Photoshop</span>
+      <span class="skill">🖥️ Windows Server</span>
+      <span class="skill">🐧 Linux/Unix</span>
+      <span class="skill">👥 Team Management</span>
+    </div>
+    <p>🎓 Master of Computer Science — University of Karachi<br>
+    🏅 Certifications: DIT, CIT, ORACLE, IELTS</p>
+    <a href="cv.pdf" class="btn" download>📄 Download CV</a>
+  </section>
+
+  <section class="services" id="services">
+    <h2>Meri Services</h2>
+    <div class="service-cards">
+      <div class="card">
+        <h3>📊 MS Office</h3>
+        <p>Word documents, Excel sheets aur PowerPoint presentations — professional aur time pe delivery.</p>
+        <a href="https://wa.me/923322281507" class="btn">Order Now</a>
+      </div>
+      <div class="card">
+        <h3>🎨 Photoshop</h3>
+        <p>Photo editing, poster design, banners aur graphic design — jaisa chaho waisa result.</p>
+        <a href="https://wa.me/923322281507" class="btn">Order Now</a>
+      </div>
+    </div>
+
+    <h2 class="work-title">Mera Kaam</h2>
+    <div class="gallery-grid">
+      <img src="work1.jpg" alt="Design 1">
+      <img src="work2.jpg" alt="Design 2">
+      <img src="work3.jpg" alt="Design 3">
+    </div>
+  </section>
+
+  <section class="pricing" id="pricing">
+    <h2>Hmare Rates</h2>
+    <div class="price-cards">
+      <div class="price-card">
+        <h3>Basic</h3>
+        <div class="amount">Rs 500</div>
+        <ul>
+          <li>Simple typing / Word work</li>
+          <li>1 document</li>
+          <li>1 din me delivery</li>
+        </ul>
+        <a href="https://wa.me/923322281507" class="btn">Order Now</a>
+      </div>
+      <div class="price-card popular">
+        <span class="badge">⭐ Popular</span>
+        <h3>Standard</h3>
+        <div class="amount">Rs 1500</div>
+        <ul>
+          <li>PowerPoint presentation</li>
+          <li>Photo editing</li>
+          <li>2 baar revision</li>
+        </ul>
+        <a href="https://wa.me/923322281507" class="btn">Order Now</a>
+      </div>
+      <div class="price-card">
+        <h3>Premium</h3>
+        <div class="amount">Rs 3000</div>
+        <ul>
+          <li>Logo + banner + poster</li>
+          <li>Complete design package</li>
+          <li>Unlimited revisions</li>
+        </ul>
+        <a href="https://wa.me/923322281507" class="btn">Order Now</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Contact Me</h2>
+    <p>Koi kaam hai? Seedha WhatsApp pe message karo!</p>
+    <a href="https://wa.me/923322281507" class="btn">WhatsApp Karo</a>
+  </section>
+
+</body>
+</html>
